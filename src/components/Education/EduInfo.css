@@ -1,0 +1,78 @@
+img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.edu-info {
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px black;
+    /* text-wrap: nowrap;
+    overflow: hidden; */
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+@media (max-width: 992px) {
+    /* .edu-info {
+        width: 80%;
+    }
+    .inner{
+        width: 80%;
+    } */
+}
+
+/* .inner {
+    display: none;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0px black;
+    width: 100%;
+    transition: display 2s ease-in-out, visibility 2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.outer-edu-info:hover {
+    .inner {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+} */
+
+.inner {
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    bottom: 15px;
+    transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0px black;
+    width: auto;
+    padding: 0 30px;
+}
+
+.outer-edu-info:hover {
+    .inner {
+        opacity: 1;
+        bottom: 0px;
+        /* display: block; */
+    }
+}
+
+
+.outer-edu-info {
+    /* width: 100%; */
+    /* margin: 0; */
+    position: relative;
+    min-height: max-content;
+
+}
